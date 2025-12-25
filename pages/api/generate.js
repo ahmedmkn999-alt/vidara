@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ message: "Method not allowed" });
 
   const { prompt } = req.body;
-  // المفتاح موجود هنا
+  // المفتاح الجديد الخاص بك
   const token = "R8_Kv4EUNsp6xIkUtcP3xCGjbIVF36pOxx3fq803";
 
   try {
