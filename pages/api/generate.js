@@ -9,10 +9,10 @@ export default async function handler(req, res) {
       headers: { Authorization: `Token ${token}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         version: "9f747673945c62801b13b84701c783929c0ee784e4748ec062204894dda1a351",
-        input: { prompt, num_frames: 24, fps: 8, width: 576, height: 320 }
+        input: { prompt, num_frames: 24, fps: 8 }
       }),
     });
     const prediction = await response.json();
     res.status(201).json(prediction);
   } catch (error) { res.status(500).json({ message: error.message }); }
-      }
+}
