@@ -1,5 +1,5 @@
 {
-  "name": "vidara-ai-platform",
+  "name": "vidara-ai",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -10,5 +10,11 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
   }
 }
