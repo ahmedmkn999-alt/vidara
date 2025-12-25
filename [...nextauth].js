@@ -4,9 +4,9 @@ import GoogleProvider from "next-auth/providers/google";
 export default NextAuth({
   providers: [
     GoogleProvider({
-      clientId: "ضـع_هنا_رقم_CLIENT_ID_من_جوجل",
-      clientSecret: "ضـع_هنا_رقم_CLIENT_SECRET_من_جوجل",
+      clientId: "627697628144-jhn1uu9825kqhb1qjqbtiu5joecu07sv.apps.googleusercontent.com",
+      clientSecret: "ضـع_هنا_الرقم_السري_الثاني_من_جوجل",
     }),
   ],
-  secret: "vidara-secret-key-2025",
+  secret: "vidara-secret-2025",
 });
