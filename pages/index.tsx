@@ -19,13 +19,10 @@ export default function Home() {
 
   return (
     <div style={{minHeight: '100vh', background: '#0f172a', color: 'white', fontFamily: 'sans-serif', direction: 'rtl'}}>
-      {/* البار العلوي */}
+      {/* البار العلوي - نظيف للعملاء فقط */}
       <nav style={{padding: '20px', borderBottom: '1px solid #1f2937', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
         <h1 style={{fontSize: '24px', color: '#60a5fa', margin: 0, fontWeight: 'bold'}}>فيدارا AI 🤖</h1>
-        <div style={{display: 'flex', gap: '10px'}}>
-           <Link href="/admin"><button style={{background: 'transparent', color: '#9ca3af', border: '1px solid #374151', padding: '8px 15px', borderRadius: '5px', cursor: 'pointer'}}>الإدارة</button></Link>
-           <Link href="/dashboard"><button style={{background: '#2563eb', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer', fontWeight: 'bold'}}>دخول الاستوديو 🚀</button></Link>
-        </div>
+        <Link href="/dashboard"><button style={{background: '#2563eb', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '5px', cursor: 'pointer', fontWeight: 'bold'}}>دخول الاستوديو 🚀</button></Link>
       </nav>
 
       {/* مقدمة الموقع */}
@@ -49,7 +46,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* نافذة الدفع المنبثقة */}
+      {/* نافذة الدفع */}
       {selectedPlan && (
         <div style={{position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100}}>
           <div style={{background: '#1e293b', padding: '30px', borderRadius: '15px', width: '90%', maxWidth: '400px', textAlign: 'center'}}>
@@ -67,5 +64,4 @@ export default function Home() {
       )}
     </div>
   );
-      }
-                                               
+              }
